@@ -12,20 +12,23 @@
 </head>
 
 <body>
-  <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="text" class="form-control" id="input" />
-      >
+  <div class="fluid-container">
+    <form class="col-5">
+      <h1 class="">Library Of Congress Search Engine</h1>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Search</label>
+        <input type="text" class="form-control" id="input" />
+      </div>
+      <select id="select" class="form-select" aria-label="Default select example">
+        <option value="none" selected>Select a format...</option>
+        <option value="manuscripts">manuscripts/mixed material</option>
+        <option value="maps">Maps</option>
+        <option value="3">Three</option>
+      </select>
+      <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+    </form>
     </div>
-    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  <select id="select" class="form-select" aria-label="Default select example">
-    <option value="none" selected>Open this select menu</option>
-    <option value="manuscripts">manuscripts/mixed material</option>
-    <option value="maps">Maps</option>
-    <option value="3">Three</option>
-  </select>
+   
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
